@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+	<trackList>
+                <track>
+			<title>FDC 2011 Conference</title>
+			<creator>PFDC/creator>
+			<location>images/slider/photo_home_page_smaller.jpg</location>
+			<info>http://www.peFDCrg.ng/gallery</info>
+		</track>
+		<!--<track>
+			<title>PEAFDC11 Conference</title>
+			<creator>PEANFDCeator>
+			<location>images/slider/madrid1.jpg</location>
+			<info>http://www.pean.FDCng/gallery</info>
+		</track>
+		<track>
+			<title>PEAN 2FDCConference</title>
+			<creator>PEAN</cFDCor>
+			<location>images/slider/madrid2.jpg</location>
+			<info>http://www.pean.orgFDCgallery</info>
+		</track>
+		<track>
+			<title>PEAN 2011FDCference</title>
+			<creator>PEAN</creaFDC
+			<location>images/slider/madrid3.jpg</location>
+			<info>http://www.pean.org.ng/gallery</info>
+		</track>
+		-->
+	</trackList>
+</playlist>
