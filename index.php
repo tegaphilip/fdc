@@ -42,18 +42,13 @@ if(isset($_POST['btnLogin'])){
             <div class="span8">
              	<h4 class="breadcrumb">Welcome</h4>
                 <p>
-                    Welcome to the FDC homepage. FDC is dedicated to promoting good practice of education based on sound theoretical foundation in philosophy and philosophical enterprise. FDC promotes philosophy of education among it's members, students and other practitioners in education with a view to enhancing quality practice in education in Nigeria in particular and to contribute to relevant global debate in the discipline.
+                    Welcome to the homepage of the Faculty Development Centre.
+                    FDC is dedicated to promoting academics as stated in their Vision Statement.
                 </p>
-                <br/><br/><br/><br/><br/>
-                <ul class="thumbnails pull-right">
-                    <img src="images/socrates.JPG" alt="Socrates" title="Socrates">
-               </ul>
-                <ul class="thumbnails pull-right">
-                    <img src="images/plato.jpg" alt="Plato" title="Plato">
-               </ul>
-               <ul class="thumbnails pull-right">
-                   <img src="images/aristotle.jpg" alt="Plato" title="Aristotle">
-               </ul>
+
+                <p>
+                    It is headed by the Managing Consultant, Jonathan E. Oghenekohwo, Ph.D.
+                </p>
             </div>
             <div class="span4 pull-right">
             	<?php require_once 'login_newaccount.php';?>

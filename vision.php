@@ -26,9 +26,9 @@
       <!--SLIDER HERE--><!--SLIDER-->
       
             <div class="span8">
-             	<h4 class="breadcrumb">VISION STATEMENT</h4>
+             	<h4 class="breadcrumb">VISION</h4>
                 <p>
-                    
+                    We have a vision as encapsulated in 'Academic, Research and Development Par Excellence'
                 </p>
                
             </div>

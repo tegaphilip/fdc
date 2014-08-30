@@ -28,7 +28,7 @@
             <div class="span8">
              	<h4 class="breadcrumb">MISSION STATEMENT</h4>
                 <p>
-                    
+                    Creating in Humans Skills Beyond the Reach for Empowerment.
                 </p>
                
 

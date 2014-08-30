@@ -41,11 +41,11 @@
 <div id="footer">
 	<div class="content">
     	<div class="copyright">
-        	Copyright 2013 FDC. All rights reserved.
+        	Copyright <?php echo gmdate("Y"); ?> FDC. All rights reserved.
         </div>
         <div class="socialmedia">
-                        <a href="http://www.facebook.com/FDC" target="_blank" title="Like us on Facebook"><img src="images/icons/facebook_64.png" alt="FDC - Facebook" /></a>
-                        <a href="http://www.twitter.com/FDC" target="_blank" title="Follow us on twitter"><img src="images/icons/twitter_64.png" alt="FDC - Twitter" /></a>
+                        <a href="#" target="_blank" title="Like us on Facebook"><img src="images/icons/facebook_64.png" alt="FDC - Facebook" /></a>
+                        <a href="#" target="_blank" title="Follow us on twitter"><img src="images/icons/twitter_64.png" alt="FDC - Twitter" /></a>
                               </div>
     </div>
 </div>

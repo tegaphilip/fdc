@@ -55,8 +55,8 @@ $recent = $confo->getMostRecentConference();
                               	<li class="dropdown">
 							  <a href="#" class="dropdown-toggle" data-toggle="dropdown">About FDC<b class="caret"></b></a>
 							  <ul class="dropdown-menu">
-                                <li><a href="#" title="FDC Vision">Vision</a></li>
-                                <li><a href="#" title="FDC Mission Statement">Mission Statement</a></li>
+                                <li><a href="vision.php" title="FDC Vision">Vision</a></li>
+                                <li><a href="mission.php" title="FDC Mission Statement">Mission Statement</a></li>
 								<li class="divider"></li>
 							  </ul>
 							</li>
