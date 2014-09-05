@@ -13,11 +13,9 @@ class Database
         //establishing connection in the constructor
         //error_reporting(E_ERROR);
         $hostname_login = "localhost"; //host
-        $database_login = "thinkitr_fdcdb"; //dbname
-        $username_login = "root";//db username
-        $password_login = ""; //db password
-        //$username_login = "thinkitr_fdcuser";//db username
-        //$password_login = "bGaQ]Tq%X$&f"; //db password
+        $database_login = "facultyd_db"; //dbname
+        $username_login = "facultyd_user";//db username
+        $password_login = "q#mT];)zNLPW"; //db password
 
         $this->conn = mysql_connect($hostname_login, $username_login, $password_login)
                 or die(mysql_error());
