@@ -142,23 +142,32 @@ class Member
         
         $user = $this->db->getWhere(MEMBERS, array(USERNAME=>$posted[USERNAME],PASSWORD=>sha1($posted[PASSWORD])));
         if(count($user)==0){
-            return $this->util->displayErrorMessage("Invalid username or password");
-        }else{
-            //method getwhere retruns an array of arrays
-            $user = $user[0];
-            if($user[MEMBER_STATUS]==0){
-                return $this->util->displayErrorMessage("Your account has not been activated.<br>
-                    Please check your email and activate your account");
-            }else{
-                //All is well
-                //Set sessions
-                $_SESSION[MEMBER_ID] = $user[MEMBER_ID];
-                //Update login count
-                $data = array(NUM_LOGINS=>$user[NUM_LOGINS]+1);
-                $this->db->updateTable(MEMBERS, $data, array(MEMBER_ID=>$user[MEMBER_ID]));
-                //redirect to home page
-                header("location:home.php");
+            $user = $this->db->getWhere(MEMBERS, array(EMAIL=>$posted[USERNAME],PASSWORD=>sha1($posted[PASSWORD])));
+            if(count($user) == 0) {
+                return $this->util->displayErrorMessage("Invalid username or password");
+            } else {
+                $this->proceed($user);
             }
+        }else{
+            $this->proceed($user);
+        }
+    }
+
+    public function proceed($user)
+    {
+        $user = $user[0];
+        if($user[MEMBER_STATUS]==0){
+            return $this->util->displayErrorMessage("Your account has not been activated.<br>
+                    Please check your email and activate your account");
+        }else{
+            //All is well
+            //Set sessions
+            $_SESSION[MEMBER_ID] = $user[MEMBER_ID];
+            //Update login count
+            $data = array(NUM_LOGINS=>$user[NUM_LOGINS]+1);
+            $this->db->updateTable(MEMBERS, $data, array(MEMBER_ID=>$user[MEMBER_ID]));
+            //redirect to home page
+            header("location:home.php");
         }
     }
     
