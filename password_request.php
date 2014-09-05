@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
 require_once 'classes/Database.php';
 require_once 'classes/Utilities.php';
 require_once 'classes/Constants.php';
@@ -11,8 +12,6 @@ $member = new Member();
 if(isset($_POST['Submit'])){
     $reg_response = $member->retrievePassword();
 }
-
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,7 +54,7 @@ if(isset($_POST['Submit'])){
                         <div class="control-group">
 						<label class="control-label">Email Address</label>
 						<div class="controls docs-input-sizes">
-						  <input value="<?php echo $_POST[EMAIL]; ?>" name="<?php echo EMAIL; ?>" type="text" class="span4" id="<?php echo EMAIL; ?>" placeholder="Email">
+						  <input required value="<?php echo $_POST[EMAIL]; ?>" name="<?php echo EMAIL; ?>" type="text" class="span4" id="<?php echo EMAIL; ?>" placeholder="Email">
 						</div>
 					  </div>
                       

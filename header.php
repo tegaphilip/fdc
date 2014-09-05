@@ -1,5 +1,8 @@
 <?php
-session_start();
+error_reporting(E_ALL & ~E_NOTICE);
+if(!isset($_SESSION)){
+    session_start();
+}
 require_once 'classes/Database.php';
 require_once 'classes/Utilities.php';
 require_once 'classes/Constants.php';
@@ -67,8 +70,7 @@ $recent = $confo->getMostRecentConference();
 								<li><a href="#">Books</a></li>
 							  </ul>
 							</li>
-							 <li><a href="#">FDC Gallery</a></li>
-                             <li><a href="#">Contact FDC</a></li>
+                             <li><a href="contact.php">Contact FDC</a></li>
 						  </ul>
 						  <ul class="nav pull-right">
 						   <li class="divider-vertical"></li>

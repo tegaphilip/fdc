@@ -38,7 +38,7 @@ else
       <div class="row">
       <!--SLIDER HERE--><!--SLIDER-->
         <div class="span8">
-		<h4 class="breadcrumb">CONTACT PEAN</h4>
+		<h4 class="breadcrumb">CONTACT FDC</h4>
 	  <p>
       	<?php echo $message; ?>
 	  </p>

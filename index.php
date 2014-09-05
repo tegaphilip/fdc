@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
 session_start();
 require_once 'classes/Database.php';
 require_once 'classes/Utilities.php';
@@ -47,8 +48,17 @@ if(isset($_POST['btnLogin'])){
                 </p>
 
                 <p>
+                    FDC History is centrally on human capacity building, skills enrichment, manpower development research work, feasebility studies, training  community development and services dating back to 2010. FDC enhances human resource development, resourcefulness innovativeness and creativity through learning and continuing education of lifelong impact.
+                </p>
+
+                <p>
                     It is headed by the Managing Consultant, Jonathan E. Oghenekohwo, Ph.D.
                 </p>
+
+               <p style="text-align: center;">
+                    <img src="images/Capacity-Building-1000-by-460-670x300.jpg" alt="Socrates" title="Socrates">
+               </p>
+                <?php require_once('aims.php'); ?>
             </div>
             <div class="span4 pull-right">
             	<?php require_once 'login_newaccount.php';?>

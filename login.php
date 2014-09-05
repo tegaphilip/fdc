@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
 session_start();
 require_once 'classes/Database.php';
 require_once 'classes/Utilities.php';
@@ -63,7 +64,7 @@ if(isset($_POST['btnLogin'])){
 					  <div class="control-group">
 						<label class="control-label">Username</label>
 						<div class="controls docs-input-sizes">
-						  <input name="<?php echo USERNAME; ?>" type="text" class="span4" id="<?php echo USERNAME; ?>" placeholder="Username">
+						  <input required name="<?php echo USERNAME; ?>" type="text" class="span4" id="<?php echo USERNAME; ?>" placeholder="Username">
 						</div>
 					  </div>					 
 					  </div>					 
@@ -71,7 +72,7 @@ if(isset($_POST['btnLogin'])){
 					  <div class="control-group">
 						<label class="control-label">Password</label>
 						<div class="controls docs-input-sizes">
-						  <input name="<?php echo PASSWORD; ?>" type="password" class="span4" id="<?php echo PASSWORD; ?>" 
+						  <input required name="<?php echo PASSWORD; ?>" type="password" class="span4" id="<?php echo PASSWORD; ?>"
                                                          placeholder="">
 						</div>
 					  </div>					  

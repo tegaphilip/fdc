@@ -1,5 +1,7 @@
 <?php
-session_start();
+if(!isset($_SESSION)){
+    session_start();
+}
 require_once 'Database.php';
 require_once 'Utilities.php';
 require_once 'Constants.php';
@@ -301,9 +303,9 @@ class Member
     
     public function composeMessage($fn,$ln,$act_code,$em){
         return  "Dear <strong>$fn $ln<strong>,
-                <br><br>You have succesfully registered on the official website of the Philosophy of Education Association of Nigeria.
+                <br><br>You have succesfully registered on the official website of the Faculty Development Centre.
                 <br>Please Click the link below to confirm your registration
-                <br><a href='http://www.FDC.org.ng/confirm.php?em=$em&code=$act_code'>Click here</a>
+                <br><a href='http://www.facultydevelopmentcentre.com/confirm.php?em=$em&code=$act_code'>Click here</a>
                 <br>Thank you";
     }
     

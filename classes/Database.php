@@ -1,5 +1,8 @@
-<?php	
-session_start();
+<?php
+error_reporting(E_ALL & ~E_NOTICE);
+if(!isset($_SESSION)){
+    session_start();
+}
 class Database
 {
     private $db;
@@ -126,22 +129,30 @@ class Database
             $query.=" WHERE ";
         }
         $i=0;
-        foreach ($condition as $key => $value){ 
-            $query.=" $key = '$value' ";
-            $i++;
-            if(count($condition)>$i){
-                $query.=" AND ";
+
+        if (!is_null($condition)) {
+            foreach ($condition as $key => $value){
+                $query.=" $key = '$value' ";
+                $i++;
+                if(count($condition)>$i){
+                    $query.=" AND ";
+                }
             }
         }
-        if(count($order_by)>0){
-            $query.=" ORDER BY ";
-        }
-        $i=0;
-        foreach ($order_by as $key => $value){ 
-            $query.=" $key $value ";
-            $i++;
-            if(count($order_by)>$i){
-                $query.=",";
+
+        if (!is_null(($order_by))) {
+
+            if(count($order_by)>0){
+                $query.=" ORDER BY ";
+            }
+            $i=0;
+
+            foreach ($order_by as $key => $value){
+                $query.=" $key $value ";
+                $i++;
+                if(count($order_by)>$i){
+                    $query.=",";
+                }
             }
         }
         return $this->fetchRows($query);

@@ -19,58 +19,63 @@
       <div class="row">
       <!--SLIDER HERE--><!--SLIDER-->
         <div class="span8">
-		<h4 class="breadcrumb">CONTACT PFDC/h4>
+		<h4 class="breadcrumb">CONTACT FDC</h4>
 	  <p>
 		<div class="row">
       <div class="span6">
-      <form class="form-horizontal" method="post" action="#">
-        <fieldset>
-<!--          <p>
-          	If you would like to get back to us for anything, kindly use the form below. Thanks.
-          </p>
-          
-          <br />
-          <div class="control-group">
-            <label for="focusedInput" class="control-label">First Name:</label>
-            <div class="controls">
-              <input type="text" placeholder="your first name" id="focusedInput" class="input-xlarge focused span6">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label">E-Mail Address:</label>
-            <div class="controls">
-              <input type="text" placeholder="your email" class="input-xlarge span6">
-            </div>
-          </div>
-		  <div class="control-group">
-            <label for="textarea" class="control-label">Enquiry:</label>
-            <div class="controls">
-              <textarea rows="3" id="textarea"  placeholder="What would you like to contact us about?" class="input-xlarge span6"></textarea>
-            </div>
-          </div>
-
-          <div class="span6">
-				<button class="btn btn-primary pull-right" style="margin-right: 20px;" type="submit">Continue</button>
-          </div>-->
-        </fieldset>
-      </form>
+<!--      <form class="form-horizontal" method="post" action="#">-->
+<!--        <fieldset>-->
+<!--          <p>-->
+<!--          	If you would like to get back to us for anything, kindly use the form below. Thanks.-->
+<!--          </p>-->
+<!---->
+<!--          <br />-->
+<!--          <div class="control-group">-->
+<!--            <label for="focusedInput" class="control-label">First Name:</label>-->
+<!--            <div class="controls">-->
+<!--              <input type="text" placeholder="your first name" id="focusedInput" class="input-xlarge focused span6">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div class="control-group">-->
+<!--            <label class="control-label">E-Mail Address:</label>-->
+<!--            <div class="controls">-->
+<!--              <input type="text" placeholder="your email" class="input-xlarge span6">-->
+<!--            </div>-->
+<!--          </div>-->
+<!--		  <div class="control-group">-->
+<!--            <label for="textarea" class="control-label">Enquiry:</label>-->
+<!--            <div class="controls">-->
+<!--              <textarea rows="3" id="textarea"  placeholder="What would you like to contact us about?" class="input-xlarge span6"></textarea>-->
+<!--            </div>-->
+<!--          </div>-->
+<!---->
+<!--          <div class="span6">-->
+<!--				<button class="btn btn-primary pull-right" style="margin-right: 20px;" type="submit">Continue</button>-->
+<!--          </div>-->
+<!--        </fieldset>-->
+<!--      </form>-->
     </div>
  
   </div>
   <br>
    <div class="span7">
-            <h3>Address:</h3>
-            <p>University of Ibadan</p>
+        <h3>Address:</h3>
+        <p>Faculty House,</p>
+        <p> Winners' Road,</p>
+       <p> Agudama,  Yenagoa,</p>
+       <p>Bayelsa State. </p>
+    <br>
             <h3>Telephone:</h3>
-            <p>08033223932</p>
+            <p>080***********</p>
+       <br>
             <h3>Email:</h3>
-            <p><a href="mailto:info@peFDCrg.ng">info@pean.org.ng</a></p>
+            <p><a href="mailto:facultyhouse2010@gmail.com">facultyhouse2010@gmail.com</a></p>
      </div>
-</div>
+    </div>
            
-            <div class="span4 pull-right">
-            	<?php require_once 'login_newaccount.php';?>
-            </div>
+    <div class="span4 pull-right">
+        <?php require_once 'login_newaccount.php';?>
+    </div>
          
       </div>
       <!--sponsorship partnership

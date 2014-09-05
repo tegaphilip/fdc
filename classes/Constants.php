@@ -1,5 +1,4 @@
 <?php
-session_start();
 class Constants 
 {
     public function __construct(){
@@ -27,29 +26,29 @@ class Constants
         define('GENDER', 'gender');
 		define('PASSWORD_RETRIEVAL_CODE','password_retrieval_code');
 		define('PASSWORD_RETRIEVAL_CODE_USED','password_retrieval_code_used');
-        
-        
+
+
         //Affiliation-based Constant
         define('AFFILIATIONS', 'affiliations');
         define('AFFILIATION_ID', 'affiliation_id');
         define('AFFILIATION_CODE', 'affiliation_code');
         define('AFFILIATION_NAME', 'affiliation_name');
-        
+
         //State-based constants
         define('STATES', 'states');
         define('STATE_ID', 'state_id');
         define('STATE_CODE', 'state_code');
         define('STATE_NAME', 'state_name');
-        
+
         //Admin-based constants
         define('ADMINISTRATORS','administrators');
         define('ADMIN_ID', 'admin_id');
         define('ADMIN_CODE', 'admin_code');
         define('ADMIN_STATUS', 'admin_status');
         define('ADMIN_TYPE', 'admin_type');
-        
-        
-        
+
+
+
         //General Constants
         define('DATE_UPDATED', 'date_updated');
         define('START_TIME','start_time');
@@ -64,11 +63,11 @@ class Constants
         define('URL', 'url');
         define('ID', 'id');
         define('CONTACT_ADDRESS', 'contact_address');
-        
+
         //Audit-log constants
         define('AUDIT_LOGS','audit_logs');
         define('ACTION','action');
-        
+
         //Sponsor-based constants
         define('SPONSOR_ID','sponsor_id');
         define('SPONSORS','sponsors');
@@ -77,7 +76,7 @@ class Constants
         define('SPONSOR_URL','sponsor_url');
         define('SPONSOR_LOGO','sponsor_logo');
         define('ACTIVATION_STATUS','activation_status');
-        
+
         //Linkage-based constants
         define('LINKAGE_ID','linkage_id');
         define('LINKAGES','linkages');
@@ -85,16 +84,16 @@ class Constants
         define('LINKAGE_NAME','linkage_name');
         define('LINKAGE_URL','linkage_url');
         define('LINKAGE_LOGO','linkage_logo');
-        
-        
-        
+
+
+
         //Country-based constants
         define('COUNTRIES','countries');
         define('COUNTRY_ID','country_id');
         define('COUNTRY_CODE','country_code');
         define('COUNTRY_NAME','country_name');
         define('COUNTRY_FLAG_URL','country_flag_url');
-        
+
         //Conference -based constants
         define('CONFERENCES','conferences');
         define('CONFERENCE_DETAILS','conference_details');
@@ -126,7 +125,7 @@ class Constants
         define('CONFERENCE_REGISTRATION_TYPE_ID','conference_registration_type_id');
         define('CONFERENCE_REGISTRATION_TYPE_NAME','conference_registration_type_name');
         define('CONFERENCE_REGISTRATION_TYPE_code','conference_registration_type_code');
-        		
+
         //Offices
         define('OFFICES','offices');
         define('OFFICE_ID','office_id');
@@ -138,23 +137,23 @@ class Constants
         define('DATE_SWORN_IN','date_sworn_in');
         define('DATE_LEFT_OFFICE','date_left_office');
         define('STATUS','status');
-        
-        
+
+
         define('START_DAY','start_day');
         define('START_MONTH','start_month');
         define('START_YEAR','start_year');
         define('END_DAY','end_day');
         define('END_MONTH','end_month');
         define('END_YEAR','end_year');
-        
-        
+
+
         define('SALUTATIONS','salutations');
         define('SALUTATION','salutation');
         define('SALUTATION_ID','salutation_id');
-       
+
         define('MAILER_DAEMON','no-reply@FDC.org.ng');
-        
-        
+
+
         /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
         ||CONSTANTS I ADDED
         ||Journals
@@ -166,7 +165,6 @@ class Constants
         define('JOURNAL_DATE','journal_date');
         define('JOURNAL_ABSTRACT','journal_abstract');
         define('JOURNAL_ISBN','journal_isbn');
-        define('PUBLISHER_DETAILS','publisher_details');
         define('JOURNAL_DAY','journal_day');
         define('JOURNAL_MONTH','journal_month');
         define('JOURNAL_YEAR','journal_year');

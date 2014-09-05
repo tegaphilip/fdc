@@ -31,9 +31,10 @@
                     Creating in Humans Skills Beyond the Reach for Empowerment.
                 </p>
                
+                <br/>
+                <?php require_once('aims.php'); ?>
 
 
-                
             </div>
             <div class="span4 pull-right">
             	<?php require_once 'login_newaccount.php';?>

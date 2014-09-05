@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL & ~E_NOTICE);
 require_once 'classes/Database.php';
 require_once 'classes/Utilities.php';
 require_once 'classes/Constants.php';

@@ -32,7 +32,7 @@ $member->validateLogin();
       <div class="row">
       
             <div class="span12">
-             	<h4 class="breadcrumb">PEAN CONSTITUTION</h4>
+             	<h4 class="breadcrumb">FDC CONSTITUTION</h4>
                 <p>
                 
                 <table width="100%" border="0" cellspacing="5" cellpadding="5" align="center" bgcolor="#FFFFFF">
