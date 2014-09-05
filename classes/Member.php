@@ -51,7 +51,7 @@ class Member
 			$this->db->updateTable(MEMBERS,$data,$condition);
 			
 			//Mail the user with a password retrival link
-			$message = "Dear ".$user[FIRST_NAME]." ".$user[LAST_NAME].",<br>You have requested a password reset. Please click <a href='http://www.FDC.org.ng/password_reset.php?em=".$user[EMAIL]."&code=".$code."'>here</a> to reset your password.<br> If you did not make this request, please ignore this mail. <br>Thanks";
+			$message = "Dear ".$user[FIRST_NAME]." ".$user[LAST_NAME].",<br>You have requested a password reset. Please click <a href='http://www.facultydevelopmentcentre.com/password_reset.php?em=".$user[EMAIL]."&code=".$code."'>here</a> to reset your password.<br> If you did not make this request, please ignore this mail. <br>Thanks";
 			
 			if($this->util->sendMail($user[EMAIL],"PASSWORD RESET REQUEST",$message)){
                                 return $this->util->displaySuccessMessage("A password reset link has been sent to your email.");
