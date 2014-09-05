@@ -30,6 +30,9 @@
                 <p>
                     We have a vision as encapsulated in 'Academic, Research and Development Par Excellence'
                 </p>
+
+                <br/>
+                <?php require_once('aims.php'); ?>
                
             </div>
             <div class="span4 pull-right">
