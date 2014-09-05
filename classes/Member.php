@@ -82,7 +82,7 @@ class Member
 				
 				//Mail the user with a new link to confirm account
 				$message = "Dear ".$user[FIRST_NAME]." ".$user[LAST_NAME].",<br>You have requested a new account confirmation link. 
-                                    Please click <a href='http://www.FDC.org.ng/confirm.php?em=".$user[EMAIL]."&code=".$code."'>here</a> to confirm your account.<br>Thanks";
+                                    Please click <a href='http://www.facultydevelopmentcentre.com/confirm.php?em=".$user[EMAIL]."&code=".$code."'>here</a> to confirm your account.<br>Thanks";
 				
 				if($this->util->sendMail($user[EMAIL],"ACCOUNT CONFIRMATION LINK",$message)){
                                     return $this->util->displaySuccessMessage("An account confirmation link has been sent to your email.<br>Please check your email and confirm within 2 days. Thanks");
@@ -325,7 +325,7 @@ class Member
 					//Link has stayed more than two days
 					return $this->util->displayErrorMessage("Sorry, your activation came later than two days after registration.
                         <br>Please request for a new activation link
-                        <br><a href='http://www.FDC.org.ng/newlink.php'>Click here to make a new request</a>");
+                        <br><a href='http://www.facultydevelopmentcentre.com/newlink.php'>Click here to make a new request</a>");
 				}else{
 					//Update the users account
 					$data = array(
@@ -338,7 +338,7 @@ class Member
 					}else{
 						return $this->util->displayErrorMessage("Sorry, an error occurred while trying to activate your account.
 							<br>Please request for a new activation link
-							<br><a href='http://www.FDC.org.ng/newlink.php'>Click here to make a new request</a>");
+							<br><a href='http://www.facultydevelopmentcentre.com/newlink.php'>Click here to make a new request</a>");
 					}
             	}
 			}
@@ -346,7 +346,7 @@ class Member
         }else{
             return $this->util->displayErrorMessage("Sorry, this activation link is invalid
                 <br>Please request for a new activation link
-                        <br><a href='http://www.FDC.org.ng/newlink.php'>Click here to make a new request</a></div>");
+                        <br><a href='http://www.facultydevelopmentcentre.com/newlink.php'>Click here to make a new request</a></div>");
         }
     }
     

@@ -68,7 +68,7 @@
 					</ul>
 				</li>
 				<li>
-					<a href="http://webmail.FDC.org.ng"><i class="icon icon-signal"></i> <span>Webmail</span></a>
+					<a href="http://webmail.facultydevelopmentcentre.com/"><i class="icon icon-signal"></i> <span>Webmail</span></a>
 				</li>
           <li class="submenu">
 					<a href="#"><i class="icon icon-user"></i> <span>Profile Management</span> <span class="label">+</span></a>

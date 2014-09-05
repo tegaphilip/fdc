@@ -151,7 +151,7 @@ class Constants
         define('SALUTATION','salutation');
         define('SALUTATION_ID','salutation_id');
 
-        define('MAILER_DAEMON','no-reply@FDC.org.ng');
+        define('MAILER_DAEMON','no-reply@facultydevelopmentcentre.com');
 
 
         /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

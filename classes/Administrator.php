@@ -198,7 +198,7 @@ class Administrator
 			$this->db->updateTable(MEMBERS,$data,$condition);
 			
 			//Mail the user with a password retrival link
-			$message = "Dear ".$user[FIRST_NAME]." ".$user[LAST_NAME].",<br>You have requested a password reset. Please click <a href='http://www.FDC.org.ng/password_reset.php?em=".$user[EMAIL]."&code=".$code."'>here</a> to reset your password.<br> If you did not make this request, please ignore this mail. <br>Thanks";
+			$message = "Dear ".$user[FIRST_NAME]." ".$user[LAST_NAME].",<br>You have requested a password reset. Please click <a href='http://www.facultydevelopmentcentre.com/password_reset.php?em=".$user[EMAIL]."&code=".$code."'>here</a> to reset your password.<br> If you did not make this request, please ignore this mail. <br>Thanks";
 			
 			if($this->util->sendMail($user[EMAIL],"PASSWORD RESET REQUEST",$message)){
 				return "<div class='alert-success'>A password reset link has been sent to your email.</div>";
@@ -228,7 +228,7 @@ class Administrator
 				$this->db->updateTable(MEMBERS,$data,$condition);
 				
 				//Mail the user with a new link to confirm account
-				$message = "Dear ".$user[FIRST_NAME]." ".$user[LAST_NAME].",<br>You have requested a new account confirmation link. Please click <a href='http://www.FDC.org.ng/password_reset.php?em=".$user[EMAIL]."&code=".$code."'>here</a> to confirm your account.<br>Thanks";
+				$message = "Dear ".$user[FIRST_NAME]." ".$user[LAST_NAME].",<br>You have requested a new account confirmation link. Please click <a href='http://www.facultydevelopmentcentre.com/password_reset.php?em=".$user[EMAIL]."&code=".$code."'>here</a> to confirm your account.<br>Thanks";
 				
 				if($this->util->sendMail($user[EMAIL],"ACCOUNT CONFIRMATION LINK",$message)){
 					return "<div class='alert-success'>An account confirmation link has been sent to your email.<br>Please check your email and confirm within 2 days. Thanks</div>";
@@ -425,7 +425,7 @@ class Administrator
         return  "Dear <strong>$fn $ln<strong>,
                 <br><br>You have succesfully registered on the official website of the Philosophy of Education Association of Nigeria.
                 <br>Please Click the link below to confirm your registration
-                <br><a href='http://www.FDC.org.ng/confirm.php?em=$em&code=$act_code'>Click here</a>
+                <br><a href='http://www.facultydevelopmentcentre.com/confirm.php?em=$em&code=$act_code'>Click here</a>
                 <br>Thank you";
     }
     
@@ -445,7 +445,7 @@ class Administrator
 					//Link has stayed more than two days
 					return "<div class='alert-error'>Sorry, your activation came later than two days after registration.
                         <br>Please request for a new activation link
-                        <br><a href='http://www.FDC.org.ng/newlink.php'>Click here to make a new request</a></div>";
+                        <br><a href='http://www.facultydevelopmentcentre.com/newlink.php'>Click here to make a new request</a></div>";
 				}else{
 					//Update the users account
 					$data = array(
@@ -458,7 +458,7 @@ class Administrator
 					}else{
 						return "<div class='alert-error'>Sorry, an error occurred while trying to activate your account.
 							<br>Please request for a new activation link
-							<br><a href='http://www.FDC.org.ng/newlink.php'>Click here to make a new request</a></div>";
+							<br><a href='http://www.facultydevelopmentcentre.com/newlink.php'>Click here to make a new request</a></div>";
 					}
             	}
 			}
@@ -466,7 +466,7 @@ class Administrator
         }else{
             return "<div class='alert-error'>Sorry, this activation link is invalid
                 <br>Please request for a new activation link
-                        <br><a href='http://www.FDC.org.ng/newlink.php'>Click here to make a new request</a></div>";
+                        <br><a href='http://www.facultydevelopmentcentre.com/newlink.php'>Click here to make a new request</a></div>";
         }
     }
     
