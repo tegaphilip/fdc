@@ -52,7 +52,7 @@ if(isset($_POST['btnLogin'])){
                 </p>
 
                 <p>
-                    It is headed by the Managing Consultant, Jonathan E. Oghenekohwo, Ph.D.
+                    It is headed by the Managing Consultant, Jonathan E. Oghenekohwo, Ph.D. (<a target="_blank" href="docs/CV%20of%20Jonathan%20Oghenekohwo.doc">Download CV</a>)
                 </p>
 
                <p style="text-align: center;">
